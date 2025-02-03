@@ -1,0 +1,11 @@
+.dte{
+    background-color: aqua;
+}
+h1{
+    background-color: beige;
+    display: inline;
+}
+.linebr{
+    background-color: beige;
+    display:inline-flex; 
+} 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Multiple columns */
+            gap: 10px; /* Space between items */
+        }
+        .gallery img {
+            width: 100%; 
+            height: auto; /* Maintain aspect ratio */
+            max-width: 150px; /* Limit the maximum width */
+            border: 2px solid #ccc; /* Optional border */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="Screenshot (356).png" alt="placeholder">
+        <img src="Screenshot (356).png" alt="placeholder">
+        <img src="Screenshot (356).png" alt="placeholder">
+        <img src="Screenshot (356).png" alt="placeholder">
+    </div>
+</body>
+</html>

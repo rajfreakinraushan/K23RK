@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document with Sidebar</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 50px 1fr 50px; /* Header, Content, Footer */
+            grid-template-columns: 200px 1fr; /* Sidebar, Main Content */
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: aqua;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            color: blue;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: yellow;
+            color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">Main Content</div>
+        <div class="footer">Contact us</div>
+    </div>
+</body>
+</html>
