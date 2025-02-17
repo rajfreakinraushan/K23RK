@@ -1,0 +1,37 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link  rel="stylesheet" href="output.css">
+</head>
+<body>
+  <!--container-->
+  <div class="container mx-auto px-4 bg-green-500">
+    <h1 class="text-4x1 text-center text-white">Hello World!!!!</h1>
+  </div>
+  <!--sizing-->
+  <div class="w-1/2 h-40 bg-white-600 text-green flex justify-center items-center">50% width and 40px height</div>
+  <!--display and visibity-->
+  <div class="hidden md:block">This text is hidden but visible for medium screen(768px and more)</div>
+  <!--Tailwind css float-->
+  <img src="image.jpeg" alt="Floating Image" class="float-right w-32 h-32">
+  <p class="clear-both">this text clears the float and move below the image</p>
+  <!--image class-"object "-->
+  <div class="realtive w-64 h-32 bg-gray-500">Parent element with relative positioned
+    <div class="absolute top-0 left-0 bg-red-500">Child element with absolute position</div>
+  </div>
+  <!--Tailwind CSS Positioning-->
+  <div class="relative w-64 h-32 bg-gray-500">Parent element with relative positioned
+    <div class="absolute top-0 left-0 bg-red-500 z-20">Child Element 1 with absolute positioned</div>
+    <div class="absolute top-0 left-0 bg-red-500 z-20">Child Element 2 with absolute positioned</div>
+  </div>
+  <div class="flex justify-center items-center h-20 bg-gray-500">
+    <div>Logo</div>
+    <div>Menu</div>
+  </div>
+  <img src="image.jpeg" alt="Object fit and object positioning" class="w-full h-48 object-cover object-center">
+
+</body>
+</html>
